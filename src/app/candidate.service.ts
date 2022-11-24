@@ -21,24 +21,24 @@ export class CandidateService {
   constructor(private http: HttpClient) { }
 
   addCandidate(candidate: ICandidate){
-    return this.http.post<ICandidate>('http://localhost:8081/candidate/post',candidate);
+    return this.http.post<ICandidate>('http://localhost:8082/candidate/post',candidate);
   }
 
   getCandidateList() : Observable<ICandidate[]>{
 
-    return this.http.get<ICandidate[]>( 'http://localhost:8081/candidate/get', httpOptions);
+    return this.http.get<ICandidate[]>( 'http://localhost:8082/candidate/get', httpOptions);
 
   }
 
   deleteCandidate(candidateId:number) : Observable<any> {
 
-    return this.http.delete('http://localhost:8081/delete/'+ candidateId, httpOptions )
+    return this.http.delete('http://localhost:8082/delete/'+ candidateId, httpOptions )
 
   }
 
   updateCandidate(candidateId:number) : Observable<any> {
 
-    return this.http.put('http://localhost:8081/put/'+ candidateId, httpOptions)
+    return this.http.put('http://localhost:8082/put/'+ candidateId, httpOptions)
 
   }
 
