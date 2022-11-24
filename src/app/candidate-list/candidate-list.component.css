@@ -1,0 +1,30 @@
+.buttonSpace{
+    margin-left: 10PX;
+    margin-right: 10Px;
+}
+.addmargin{
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.alignment{
+    text-align:center;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    padding: .3rem 2.1rem;
+    font-size: 1.8rem;
+    color: #333;
+    border: 0.2rem solid rgb(0, 0, 1);
+    background:#FF9933;
+    cursor: pointer;
+    border-radius: .8rem;
+    position: absolute;
+    top: 170px;
+    left: 50px;
+    box-shadow: 5px 10px 10px rgba(46, 46, 46, 0.9);
+    
+  }

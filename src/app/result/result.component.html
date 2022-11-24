@@ -1,0 +1,27 @@
+<div class="container">
+        <div>
+        <h2 class="align"> Live Poll Result </h2>
+            <table class = "table table-striped">
+    <thead>
+        <tr>
+            <th>Candidate Name</th>
+            <th>Candidate Party Name</th>
+            <th>Total Votes</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = 'let candidate of candidates'>
+            <td>{{candidate.candidateName}}</td>
+            <td>{{candidate.candidateParty}}</td>
+            <td>{{candidate.vote}}</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+
+<ng-template #loggedOut>
+    Please login
+</ng-template>
+
+</div>

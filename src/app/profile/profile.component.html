@@ -1,0 +1,28 @@
+<div  class="container" *ngIf="currentUser; else loggedOut">
+  <br>
+  <header class="jumbotron" class="p-3 mb-2 bg-info text-white rounded-lg">
+    <h3>
+      <h2>User Profile:</h2>
+      <strong>{{ currentUser.username }}</strong> 
+    </h3>
+  </header>
+
+  <p class="jumbotron" class="p-3 mb-2 bg-dark text-white rounded-lg" >
+    <strong>Email:</strong>
+    {{ currentUser.email }}
+  </p>
+  <div class="jumbotron" class="p-3 mb-2 bg-dark text-white rounded-lg">
+  <strong >Roles:</strong>
+  <ul>
+    <li *ngFor="let role of currentUser.roles">
+      {{ role }}
+    </li>
+  </ul>
+</div>
+</div>
+<br>
+<br>
+
+<ng-template #loggedOut>
+  Please login.
+</ng-template>

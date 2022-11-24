@@ -1,0 +1,30 @@
+
+    <div class="container">
+        <div>
+        <h2 class = "alignment"> Voting </h2>
+            <table class = "table table-striped">
+    <thead>
+        <tr>
+            <th>Candidate Name</th>
+            <th>Candidate Party</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody class = "addmargin">
+        <tr *ngFor = 'let candidate of candidates'>
+            <td>{{candidate.candidateName}}</td>
+            <td>{{candidate.candidateParty}}</td>
+            <td>
+                <!-- <button (click) = 'delGet(candidate.candidateId)' class="buttonSpace">Delete</button> -->
+                <button (click) = 'putCad(candidate.candidateId)' class="">Vote</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</div>
+
+<ng-template #loggedOut>
+    Please login
+</ng-template>
+
+</div>

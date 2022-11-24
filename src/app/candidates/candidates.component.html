@@ -1,0 +1,25 @@
+
+<body>
+  <div class="candidate-container">
+    <div [ngClass]="['candidates']">
+      <div class="candidate-card" *ngFor="let candidate of candidates">
+        <div class="candidate-info">
+          <img
+            src="../../assets/candidates.png"
+            alt="party-img"
+            width="10%"
+            height="40%"
+            border-radius="5pxg"
+          />
+
+          <h3>
+            {{ candidate.candidateName }}
+          </h3>
+
+          <!-- <button  type="button" class="btn btn-primary" (click)="clickme()">Vote</button> -->
+          <button  type="button" class="btn btn-primary" (click) = "putCad(candidate.candidateId);clickme()"  >Vote</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>

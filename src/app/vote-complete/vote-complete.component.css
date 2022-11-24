@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900&display=swap');
+html,body {
+    font-family: 'Raleway', sans-serif;  
+}
+.thankyou-page ._header {
+    background: #edb009;
+    padding: 100px 30px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.thankyou-page ._header .logo {
+    max-width: 200px;
+    margin: 0 auto 50px;
+    padding-bottom: 20px;
+    /* background-image: url(../../assets/home_bg3.jpg); */
+
+}
+
+.thankyou-page ._header h1 {
+    font-size: 65px;
+    font-weight: 800;
+    color: white;
+    margin: 0;
+    padding-bottom: 20px;
+}

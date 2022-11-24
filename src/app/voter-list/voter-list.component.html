@@ -1,0 +1,38 @@
+
+    <div class="container">
+        <div>
+        <h2 class = "alignment"> User List </h2>
+            <table class = "table table-striped">
+    <thead>
+        <tr>
+            <th>User Name</th>
+            <th>Email</th>
+            <th>Gender</th>
+            <th>Contact Number</th>
+            <th>address</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody class = "addmargin">
+        <tr *ngFor = 'let user of users'>
+            <td>{{user.username}}</td>
+            <td>{{user.email}}</td>
+            <td>{{user.gender}}</td>
+            <td>{{user.userContact}}</td>
+            <td>{{user.address}}</td>
+
+
+            <td>
+                <button type="button" class = "btn btn-success" (click) = 'delUser(user.userId)' class="buttonSpace">Delete</button>
+                <!-- <button type="button" class = "btn btn-success" (click) = 'putCad(candidate.candidateId)' class="">Vote</button> -->
+            </td>
+        </tr>
+    </tbody>
+</table>
+</div>
+
+<ng-template #loggedOut>
+    Please login
+</ng-template>
+
+</div>

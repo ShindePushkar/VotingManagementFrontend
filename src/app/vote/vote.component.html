@@ -1,0 +1,20 @@
+<body>
+<div  class="vote-container" >
+
+    <div class="vote-content">
+
+       <ng-container *ngFor="let vote of  voteArray;let i = index">
+
+        <app-candidates [vote]="vote" (voteAction)="voteChecker($event, i)"></app-candidates>
+
+       </ng-container>
+
+    </div>
+
+</div>
+
+</body>
+
+
+
+ 
